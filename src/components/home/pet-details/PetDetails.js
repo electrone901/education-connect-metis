@@ -264,6 +264,7 @@ function PetDetails({ account, randomContract, contractData }) {
               target="_blank"
               rel="noopener noreferrer"
               href={`https://stardust-explorer.metis.io/tx/${codeHash.transactionHash}/token-transfers`}
+              // https://stardust-explorer.metis.io/tx/0x9115889694206978ddb9451a06bf5104a0da579b84147cef865573082255709a/token-transfers
             >
               <Button
                 variant="contained"

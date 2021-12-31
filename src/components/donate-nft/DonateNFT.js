@@ -14,7 +14,7 @@ import { apiKeyport } from '../../components/APIKEYPORT'
 import { toast } from 'react-toast'
 import { ToastContainer } from 'react-toast'
 
-function DonateNFT() {
+function DonateNFT({ account, contractData }) {
   const [image, setImage] = useState('')
   const [imageName, setImageName] = useState('')
   const [description, setDescription] = useState('')
@@ -69,6 +69,24 @@ function DonateNFT() {
       })
   }
 
+  const mintNFT = async () => {
+    try {
+      if (!account) {
+        return alert('Please connect your wallet  to mint your NFT!')
+      }
+      const data = await contractData.methods
+        .mintPetNFT(
+          'https://raw.githubusercontent.com/electrone901/Guess-NFT--Game/main/public/assets/images/prize.gif',
+        )
+        .send({ from: account })
+
+      console.log('data', data)
+      setCodeHash(data)
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
   return (
     <StylesProvider injectFirst>
       <Container
@@ -79,7 +97,7 @@ function DonateNFT() {
           {codeHash ? (
             <Card className="code-hash">
               <Typography gutterBottom className="title">
-                Your NFT was minted succesfully 🎉
+                Your NFT was submitted succesfully 🎉
               </Typography>
 
               <Typography gutterBottom variant="subtitle1">
@@ -89,12 +107,14 @@ function DonateNFT() {
 
               <br />
               <p>MintedAddress:</p>
-              <p>{codeHash.mint_to_address}</p>
+              <p>
+                TransactionHash: <span>{codeHash.transactionHash}</span>{' '}
+              </p>
 
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href={codeHash.transaction_external_url}
+                href={`https://stardust-explorer.metis.io/tx/${codeHash.transactionHash}/token-transfers`}
               >
                 <Button
                   variant="contained"
@@ -114,7 +134,7 @@ function DonateNFT() {
           <br />
 
           <Typography className="title" color="textPrimary" gutterBottom>
-            Donate NFTs To Your Favorite Garden Community
+            Donate NFTs To Your Favorite Project
           </Typography>
 
           {/* Add Form */}
@@ -130,7 +150,7 @@ function DonateNFT() {
           <div className="form-container">
             <ToastContainer delay={3000} />
             <form className="form" noValidate autoComplete="off">
-              <TextField
+              {/* <TextField
                 fullWidth
                 id="outlined-basic"
                 label="Plant's name"
@@ -139,8 +159,8 @@ function DonateNFT() {
                 defaultValue={imageName}
                 onChange={(e) => setImageName(e.target.value)}
                 required
-              />
-              <TextField
+              /> */}
+              {/* <TextField
                 fullWidth
                 id="outlined-basic"
                 label="Short description"
@@ -149,7 +169,7 @@ function DonateNFT() {
                 defaultValue={description}
                 onChange={(e) => setDescription(e.target.value)}
                 required
-              />
+              /> */}
 
               <TextField
                 fullWidth
@@ -167,7 +187,7 @@ function DonateNFT() {
                 className="input"
                 id="icon-button-photo"
                 defaultValue={image}
-                onChange={mintWithNFTPort}
+                onChange={mintNFT}
                 type="file"
               />
 

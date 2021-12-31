@@ -86,7 +86,11 @@ function App() {
         <Route exact path="/" component={LoadingPage} />
         <Route exact path="/old" component={Home} />
         <Switch>
-          <Route exact path="/donate" component={DonateNFT} />
+          <Route path="/donate">
+            <DonateNFT account={account} contractData={contractData} />
+          </Route>
+
+          {/* <Route exact path="/donate" component={DonateNFT} /> */}
 
           <Route exact path="/create">
             <RegisterCommunity account={account} contractData={contractData} />
