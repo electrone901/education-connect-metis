@@ -7,112 +7,79 @@ Education NFT is an educational platform that helps students, professors, instit
 
 ### DEMO
 
-- https://educationconnec.netlify.app/
+- https://education-connect-metis2-a6glwuig-electrone901.4everland.app/
 
 ### Video Demo
 
 
 
+# 1-page abstract with the definition of the problem to solve and resolution approach
 
-# Getting Started with Create React App
+Many entrepreneurs have great ideas and talent but many times they lack important resources such as space or platforms to develop and build their network, professional connections and obtain financial opportunities.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Currently many of these projects end  abruptly either by lack of any of the above mentioned resources or someone else coming up with the same idea but with more opportunities to complete the project.
 
-## Available Scripts
+EducationConnect aims to be an open source platform that helps students, professors, institutions, philanthropists and people to protect their intellectual ideas through a decentralized and transparent way using blockchain technology to document each journey from start to finish while protecting its privacy.
 
-In the project directory, you can run:
 
-### `yarn start`
+The mission of EducationConnect is to enable people to take ownership of their works, projects, and ideas through a representation of NFTs that they can sell, swap or rent. Each idea/project is represented as an NFT that holds a financial value. The way it works is by a simple process where the user shares their awesome idea within our platform, we generate a Non Fungible Token, then the user invites people, mentors, experts and investors, to join his/her project by offering funder benefits and incentives.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ We are providing users with the necessary tools and resources allowing Individual/Institutions to fund entrepreneurs projects for further education, research, and progress. This creates new opportunities for people to secure their work, project, and ideas as an NFT.
 
-# Education NFT
 
-Education NFT is an educational platform that helps students, professors, institutions, philanthropists and people to protect their intellectual ideas through a decentralized and transparent way using blockchain technology to document their journey from start to finish.
+The mission of Education NFT is an educational platform that helps students, professors, institutions, philanthropists and people to protect their intellectual ideas through a decentralized and transparent way using blockchain technology to document their journey from start to finish.
 
-Education NFT allows people to achieve their educational dreams by
-Connecting them with the right people, investor and mentors
-Providing them with the necessary tools and resources
-Allowing Individual/Institutions to fund student projects for further education and research support
-Creates the opportunity for students to secure their projects as NFT
 
-Data gathering with IPFS, analysis and learning pathway suggestions to develop more successful people
+# 1-page scope of work with a draft budget to take proof of concept to prototype (budget will not be provided by the Hackathon, the purpose of the requisite is for cost-effect awareness)
+For this prototype we need the following:
 
-### How does it work?
+### Design
+For the web design we are considering spending $500 - $1000.  We want a better design and user flow.
 
-It's a simple process, just come up with a project/idea, start building, and get fund it. Make your dream come true and let the world discover your talent.
-Share your idea with the world:
-Share your awesome idea, project, research, or mission so others can financially support or contribute.
-Get a Non Fungible Token
-Each idea is represented as an NFT that holds your valuable work and ideas.
-Find contributors, investors, and mentors.
-Invite people, makers, mentors, and expert advisors to your project. Anyone can see ideas, but only members who purchase your idea NFT can access the community.
-Get fund it
-Offer potential funders incentives to invest in your idea.
+### Web Development
+For web development we are considering spending $5000 - $8000.  We want to build a secure, scalable and efficient app. Having all these can make a big difference on our users.  This step will also include Security and Testing.
 
-### Future
 
-In the future we would like to implement:
-Support students for their education by offering grants, scholarships and more.
+Domain Names and servers    Approximate $500 per month
+For the domain name we are considering to spend $100 - $200 per year
+For the servers we are considering to spend $250 - $500 per month
+These are decisive factors in our web  app because our backend needs to do calculations, fetch data and deal with text or media, such as photo, video, or audio.
 
-### Why Did I use IPFS?
 
-I wanted to use IPFS to design a simple and fun app where everyone can collaborate, learn about NFTs and experience them directly.
+Monitoring
+For the web analytics and monitoring we are considering spending $150 - $200 per month. This will help us to keep track of our users and to gather data about the web usage.
 
-### How it's made?
 
-NFT Pixels application makes use of the following software:
+Social Media Presence
+For social media presence we are still working on.
 
-NFTStorage: the data is stored on NFTStorage IPFS, the generated hash (CID) will be used to view the details and to retrieve the NFT.
 
-- ​​ NFTPort for multi-chain NFT minting, and data transparency such as distributing rewards and minting the NFT.
 
-- Unlock for giving the user access to exclusive content
+# 1-page description of the technology that will be used
+This application uses the following technologies:
 
-* Solidity: Solidity was used for the smart contract together with OpenZeppelin ERC721 for faster development of the smart contract
+Metis Network: we developed our platform using Metis and Metis Network
 
-* Ganache: for local blockchain development
+NFTStorage: we used NFTStorage  for data storage on IPFS that generates a transaction hash used to retrieve the NFT
 
-* Polygon, Matic Network: the network I deployed the app.
+Solidity: we used Solidity for the smart contract
 
-* Frontend: React Js for the frontend, Material-UI, and Web3 to connect to the blockchain.
+OpenZeppelin ERC72: we use the ERC721 template for a faster development of the smart contract
 
-# Demo
+Ganache for local blockchain development
 
-https://6g03v5crtshs99oqku7p81cj6dmeb9cs9pqbnlbu1t1tpcnnn90vsm0.siasky.net/
+4everland: We used 4everland as the web hosting for web3 where we deployed our app
 
-# How it's made
+React Js, Material-ui, Web3:  React Js for the frontend, Material-ui and Web3 to connect to blockchain
 
-NFT Pixels application makes use of the following softwares:
 
-### `NFTStorage` for data storage on IPFS that generates a transation hash used to retrive the NFT .
+# Demo video or presentation slides. Your video should be around 3 minutes long
+### Demo: https://education-connect-metis2-a6glwuig-electrone901.4everland.app/
 
-### `Solidity` for the smart contract
 
-### `OpenZeppelin ERC721` we use the ERC721 template for a faster development of the smart contract
 
-### `Ganache` for local blockchain development
 
-### `Polygon, Matic Network` the network I deployed the app
 
-### `React Js, Material-ui, Web3` React Js for the frontend, Material-ui and Web3 to connect to blockchain.
 
-### `Unlock Protocol` to allow users to pay for exclusive content this protocol was a big part of our use case.
 
-## Demo
 
-Website Demo:
-
-- [Demo](https://00012ucolb73g08pag0mikd4ffjusi5a5rlmiasrar4kut09jmtp8hg.siasky.net/pet-details/bafyreiccqxygmb4ozq3eycuwuf7czsodj527xtbg26cbt3xakv7ft3ar2m)
-
-  ![Main Page]() <br> <br>
-
-# Getting Started
-
-### `yarn start`
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
