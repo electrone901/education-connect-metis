@@ -8,7 +8,6 @@
 # testing
 /coverage
 notes.txt
-APIKEYS.js
 .env
 
 # production
